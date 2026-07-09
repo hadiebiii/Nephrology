@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>فصل‌های نفرولوژی</title>
-    <meta name="description" content="فهرست فصل‌های وب‌سایت نفرولوژی برای انتشار روی GitHub Pages" />
+    <meta name="description" content="فهرست فصل‌های وب‌سایت نفرولوژی با طراحی آموزشی و منظم" />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <nav class="top-nav">
-      <div class="container nav-wrap">
-        <a class="brand" href="../index.html">نفرولوژی</a>
+    <a class="skip-link" href="#main-content">پرش به محتوای اصلی</a>
+
+    <nav class="site-nav" aria-label="ناوبری اصلی">
+      <div class="container nav-shell">
+        <a class="brand" href="../index.html" aria-label="خانه نفرولوژی">
+          <span class="brand__mark">✚</span>
+          <span>نفرولوژی</span>
+        </a>
         <div class="nav-links">
           <a href="../index.html">خانه</a>
           <a href="index.html">فصل‌ها</a>
@@ -18,43 +23,77 @@
       </div>
     </nav>
 
-    <header class="hero small-hero">
-      <div class="container">
-        <p class="eyebrow">فهرست فصول</p>
-        <h1>فصل‌های وب‌سایت نفرولوژی</h1>
-        <p class="hero-text">این صفحه از فایل داده‌ی فصل‌ها تولید شده است و برای افزودن فصل جدید کافی است یک رکورد اضافه شود.</p>
+    <header class="hero hero--compact">
+      <div class="container hero-shell">
+        <div>
+          <p class="eyebrow">فهرست فصل‌ها</p>
+          <h1>مسیر آموزشی نفرولوژی</h1>
+          <p class="hero__text">
+            هر فصل در قالبی یکپارچه و قابل توسعه آماده شده تا محتوای علمی با نظم و خوانایی بهتر ارائه شود.
+          </p>
+        </div>
       </div>
     </header>
 
-    <main class="container section">
-      <div class="grid cards">
-        <a class="card link-card" href="chapter-01.html">
-          <h3>فصل 1 - مقدمه</h3>
-          <p>مقدمه و مفاهیم پایه</p>
+    <main id="main-content" class="container section">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">پیش‌نمایش مسیر</p>
+        <h2>فصل‌های موجود در پلتفرم</h2>
+      </div>
+
+      <div class="card-grid">
+        <a class="chapter-card" href="chapter-01.html">
+          <div class="chapter-card__meta">
+            <span class="badge">فصل ۱</span>
+            <span class="chapter-card__status">پایه</span>
+          </div>
+          <h3>مقدمه و مفاهیم پایه</h3>
+          <p>پایه‌های اولیه و معرفی موضوع برای شروع آموزش.</p>
         </a>
-        <a class="card link-card" href="chapter-02.html">
-          <h3>فصل 2 - ارزیابی</h3>
-          <p>ارزیابی و تشخیص اولیه</p>
+        <a class="chapter-card" href="chapter-02.html">
+          <div class="chapter-card__meta">
+            <span class="badge">فصل ۲</span>
+            <span class="chapter-card__status">تشخیص</span>
+          </div>
+          <h3>ارزیابی و تشخیص اولیه</h3>
+          <p>معرفی روش‌های ارزیابی و رویکردهای تشخیصی.</p>
         </a>
-        <a class="card link-card" href="chapter-03.html">
-          <h3>فصل 3 - بیماری‌ها</h3>
-          <p>بیماری‌های رایج و دست‌بندی اولیه</p>
+        <a class="chapter-card" href="chapter-03.html">
+          <div class="chapter-card__meta">
+            <span class="badge">فصل ۳</span>
+            <span class="chapter-card__status">بیماری‌ها</span>
+          </div>
+          <h3>بیماری‌های رایج</h3>
+          <p>دست‌هبندی بیماری‌ها و نکات آموزشی مرتبط.</p>
         </a>
-        <a class="card link-card" href="chapter-04.html">
-          <h3>فصل 4 - درمان</h3>
-          <p>روش‌های درمانی و رویکردهای پایه</p>
+        <a class="chapter-card" href="chapter-04.html">
+          <div class="chapter-card__meta">
+            <span class="badge">فصل ۴</span>
+            <span class="chapter-card__status">درمان</span>
+          </div>
+          <h3>روش‌های درمانی</h3>
+          <p>ملاحظات درمانی و رویکردهای پایه برای مطالعه.</p>
         </a>
-        <a class="card link-card" href="chapter-05.html">
-          <h3>فصل 5 - پیگیری</h3>
-          <p>پیگیری و مراقبت</p>
+        <a class="chapter-card" href="chapter-05.html">
+          <div class="chapter-card__meta">
+            <span class="badge">فصل ۵</span>
+            <span class="chapter-card__status">پیگیری</span>
+          </div>
+          <h3>پیگیری و مراقبت</h3>
+          <p>گام‌های پیگیری، نظارت و مراقبت در کاربره‌های بالینی.</p>
         </a>
-        <a class="card link-card" href="chapter-06.html">
-          <h3>فصل 6 - موارد خاص</h3>
-          <p>موارد خاص و ملاحظات ویژه</p>
+        <a class="chapter-card" href="chapter-06.html">
+          <div class="chapter-card__meta">
+            <span class="badge">فصل ۶</span>
+            <span class="chapter-card__status">موارد خاص</span>
+          </div>
+          <h3>موارد خاص و ملاحظات ویژه</h3>
+          <p>ثبت نکات ویژه و موارد خاص برای کاربران پیشرفته.</p>
         </a>
       </div>
+
       <div class="section-nav">
-        <a href="../index.html" class="btn btn-secondary">بازگشت به صفحه اصلی</a>
+        <a href="../index.html" class="btn btn--secondary">بازگشت به صفحه اصلی</a>
       </div>
     </main>
   </body>

@@ -3,105 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>نفرولوژی | صفحه اصلی</title>
-    <meta name="description" content="پروژه‌ی اولیه وب‌سایت آموزشی نفرولوژی با ساختار فصل‌به‌فصل" />
+    <title>نفرولوژی | پلتفرم آموزشی مدرن</title>
+    <meta
+      name="description"
+      content="پلتفرم آموزشی مدرن نفرولوژی با ساختار فصل‌به‌فصل، طراحی حرفه‌ای و مناسب برای دانشجویان، رزیدنت‌ها و پزشکان"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <nav class="top-nav">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html">نفرولوژی</a>
+    <a class="skip-link" href="#main-content">پرش به محتوای اصلی</a>
+
+    <nav class="site-nav" aria-label="ناوبری اصلی">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="خانه نفرولوژی">
+          <span class="brand__mark">✚</span>
+          <span>نفرولوژی</span>
+        </a>
         <div class="nav-links">
-          <a href="index.html">خانه</a>
-          <a href="chapters/">فصل‌ها</a>
+          <a href="#about">درباره</a>
+          <a href="#chapters">فصل‌ها</a>
+          <a href="#resources">منابع</a>
         </div>
       </div>
     </nav>
 
     <header class="hero">
-      <div class="container hero-inner">
-        <div>
-          <p class="eyebrow">پروژه‌ی آموزشی و پژوهشی</p>
-          <h1>نفرولوژی</h1>
-          <p class="hero-text">
-            این وب‌سایت به‌صورت مدرن و قابل‌گسترش طراحی شده است تا در آینده محتوای
-            هر فصل در قالبی منظم و خوانا قرار گیرد.
+      <div class="container hero-shell">
+        <div class="hero__content">
+          <p class="eyebrow">پلتفرم آموزشی پزشکی</p>
+          <h1>آموزش نفرولوژی با رویکردی دقیق، مدرن و قابل‌اعتماد</h1>
+          <p class="hero__text">
+            از مفاهیم پایه تا رویکردهای بالینی، این پلتفرم برای دانشجویان، رزیدنت‌ها و
+            پزشکان طراحی شده تا یادگیری را با ساختاری شفاف و حرفه‌ای تجربه کنند.
           </p>
-          <div class="hero-actions">
-            <a href="chapters/" class="btn btn-primary">مشاهده فصول</a>
-            <a href="#overview" class="btn btn-secondary">معرفی ساختار</a>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#chapters">شروع مطالعه</a>
+            <a class="btn btn--secondary" href="#about">مشاهده ساختار</a>
           </div>
-        </div>
-        <div class="hero-panel">
-          <h3>امکانات فعلی</h3>
-          <ul>
-            <li>صفحه اصلی آماده</li>
-            <li>فهرست فصول منظم</li>
-            <li>قالب واحد برای صفحات فصل</li>
-            <li>آماده برای انتشار روی GitHub Pages</li>
+          <ul class="hero__highlights" aria-label="ویژگی‌های اصلی">
+            <li>طراحی آموزشی واضح</li>
+            <li>تمرکز بر کیفیت علمی</li>
+            <li>پشتیبانی از مرور فصل‌به‌فصل</li>
           </ul>
         </div>
+
+        <aside class="hero-card" aria-label="اطلاعات سریع">
+          <p class="hero-card__label">وضعیت پروژه</p>
+          <h2>نسخه‌ی حرفه‌ای برای آموزش پزشکی</h2>
+          <ul>
+            <li>صفحه اصلی مدرن و قابل‌توسعه</li>
+            <li>فصل‌های آماده برای تکمیل محتوایی</li>
+            <li>سازگار با GitHub Pages</li>
+          </ul>
+        </aside>
       </div>
     </header>
 
-    <main>
-      <section id="overview" class="section container">
-        <h2>معماری پروژه</h2>
-        <p class="section-intro">
-          این نسخه در ریشه‌ی پروژه قرار دارد و برای انتشار روی GitHub Pages آماده است.
-        </p>
-        <div class="grid cards">
-          <article class="card">
-            <h3>صفحه اصلی</h3>
-            <p>نمای کلی از موضوع، معرفی پروژه و دسترسی سریع به فصول.</p>
+    <main id="main-content">
+      <section id="about" class="section container">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">مرور طراحی</p>
+          <h2>یک تجربه‌ی آموزشی شبیه بهترین پلتفرم‌های پزشکی مدرن</h2>
+          <p>
+            این نسخه با تمرکز بر خوانایی، ساختار منطقی و اعتماد علمی طراحی شده تا یادگیری
+            در حوزه نفرولوژی ساده‌تر و حرفه‌ای‌تر شود.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>هویت علمی</h3>
+            <p>استفاده از رنگ و فضای خالی منظم برای انتقال حس حرفه‌ای و قابل‌اعتماد.</p>
           </article>
-          <article class="card">
-            <h3>صفحه فصول</h3>
-            <p>فهرست فصل‌ها و لینک به صفحه‌ی هر فصل برای افزودن محتوای بعدی.</p>
+          <article class="feature-card">
+            <h3>ناوبری روان</h3>
+            <p>دسترسی سریع به فصل‌ها و موضوعات اصلی برای مطالعه‌ی هدفمند.</p>
           </article>
-          <article class="card">
-            <h3>صفحات فصل</h3>
-            <p>هر فصل به‌صورت صفحه‌ی جداگانه آماده شده تا محتوای تخصصی بعداً در آن درج شود.</p>
+          <article class="feature-card">
+            <h3>سازگاری با موبایل</h3>
+            <p>طرحی پاسخگو که روی صفحه‌های کوچک نیز خوانا و روان باقی می‌ماند.</p>
           </article>
         </div>
       </section>
 
-      <section class="section container">
-        <h2>فصول آماده</h2>
-        <div class="grid cards">
-          <a class="card link-card" href="chapters/chapter-01.html">
-            <h3>فصل 1</h3>
-            <p>مقدمه و مفاهیم پایه</p>
-          </a>
-          <a class="card link-card" href="chapters/chapter-02.html">
-            <h3>فصل 2</h3>
-            <p>ارزیابی و تشخیص اولیه</p>
-          </a>
-          <a class="card link-card" href="chapters/">
-            <h3>مشاهده همه</h3>
-            <p>لیست کامل فصول و صفحات آماده</p>
-          </a>
+      <section id="chapters" class="section section--alt">
+        <div class="container">
+          <div class="section-heading section-heading--row">
+            <div>
+              <p class="section-heading__eyebrow">فصل‌ها</p>
+              <h2>مسیر آموزشی قابل‌پیشروی</h2>
+            </div>
+            <a class="text-link" href="chapters/">مشاهده همه فصل‌ها</a>
+          </div>
+
+          <div class="card-grid">
+            <article class="chapter-card">
+              <div class="chapter-card__meta">
+                <span class="badge">فصل ۱</span>
+                <span class="chapter-card__status">پایه</span>
+              </div>
+              <h3>مقدمه و مفاهیم پایه</h3>
+              <p>آشنایی با اصول اولیه، اصطلاحات کلیدی و ساختار کلی آموزش نفرولوژی.</p>
+              <a class="chapter-card__link" href="chapters/chapter-01.html">باز کردن فصل</a>
+            </article>
+
+            <article class="chapter-card">
+              <div class="chapter-card__meta">
+                <span class="badge">فصل ۲</span>
+                <span class="chapter-card__status">تشخیص</span>
+              </div>
+              <h3>ارزیابی و تشخیص اولیه</h3>
+              <p>روش‌های ارزیابی، نشانه‌های بالینی و رویکردهای تشخیصی در بالین.</p>
+              <a class="chapter-card__link" href="chapters/chapter-02.html">باز کردن فصل</a>
+            </article>
+
+            <article class="chapter-card">
+              <div class="chapter-card__meta">
+                <span class="badge">فصل ۳</span>
+                <span class="chapter-card__status">بیماری‌ها</span>
+              </div>
+              <h3>بیماری‌های شایع</h3>
+              <p>مروری بر دست‌هبندی بیماری‌ها و نکات مهم در آموزش و یادگیری.</p>
+              <a class="chapter-card__link" href="chapters/chapter-03.html">باز کردن فصل</a>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section container">
-        <h2>روش افزودن فصل جدید</h2>
-        <div class="card">
-          <p>برای اضافه کردن فصل جدید، کافی است یک رکورد جدید در فایل داده‌ی فصل‌ها ثبت شود و سپس اسکریپت تولید صفحات اجرا گردد.</p>
+      <section id="resources" class="section container">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">منابع و ابزارها</p>
+          <h2>محیطی آماده برای رشد محتوایی</h2>
         </div>
-      </section>
 
-      <section class="section container">
-        <h2>وضعیت انتشار</h2>
-        <div class="card">
-          <p>این نسخه از پروژه در سطح ریشه‌ی repository قرار دارد و برای GitHub Pages آماده است. هر تغییر ثبت‌شده در شاخه main به‌صورت خودکار قابل انتشار است.</p>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <h3>مدیریت فصل‌ها</h3>
+            <p>فصل‌ها در قالبی منظم و قابل توسعه نگهداری می‌شوند.</p>
+          </article>
+          <article class="resource-card">
+            <h3>قالب تکرارپذیر</h3>
+            <p>برای افزودن محتوای جدید از یک ساختار واحد و قابل نگهداری استفاده می‌شود.</p>
+          </article>
+          <article class="resource-card">
+            <h3>انتشار سریع</h3>
+            <p>سازگار با GitHub Pages و آماده برای به‌روزرسانی مستمر.</p>
+          </article>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>نسخه‌ی اولیه — آماده برای توسعه‌ی محتوایی در آینده</p>
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>نفرولوژی · پلتفرم آموزشی پزشکی</p>
+        <a class="text-link" href="#top">بازگشت به بالا</a>
       </div>
     </footer>
   </body>
