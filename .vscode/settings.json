@@ -1,0 +1,49 @@
+{
+  "files.encoding": "utf8",
+  "editor.formatOnSave": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  "chat.agent.enabled": true,
+  "chat.permissions.default": "default",
+
+  "chat.tools.global.autoApprove": false,
+  "chat.tools.terminal.enableAutoApprove": false,
+  "chat.tools.terminal.ignoreDefaultAutoApproveRules": false,
+  "chat.tools.terminal.blockDetectedFileWrites": "outsideWorkspace",
+
+  "chat.tools.terminal.autoApprove": {
+    "git status": true,
+    "git diff --check": true,
+    "git diff --stat": true,
+    "node scripts\\validate-html-basic.js": true,
+    "gh workflow list": true,
+    "/^gh run list\\b/": true,
+    "/^gh api repos\\/hadiebiii\\/Nephrology\\/pages\\b/": true,
+
+    "git push": false,
+    "git push --force": false,
+    "git reset --hard": false,
+    "git clean -fd": false,
+    "Remove-Item": false,
+    "/^Remove-Item\\b/i": false,
+    "rm": false,
+    "del": false,
+    "rmdir": false
+  },
+
+  "chat.tools.edits.autoApprove": {
+    "**/.github/workflows/**": false,
+    "**/scripts/generate-pages.js": false,
+    "**/.env": false,
+    "**/.env.*": false
+  },
+
+  "github.copilot.chat.cli.remote.enabled": true,
+  "github.copilot.chat.cli.customAgents.enabled": true,
+
+  "chat.agentSkillsLocations": {
+    "paths": [
+      ".github/skills"
+    ]
+  }
+}
